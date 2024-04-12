@@ -1,5 +1,4 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.6.3/schema.json",
 	"organizeImports": {
 		"enabled": true
 	},
@@ -9,7 +8,7 @@
 			"recommended": true,
 			"correctness": {
 				"noUnusedVariables": "warn",
-				"noUnusedImports": "warn"
+				"noUnusedImports": "off"
 			},
 			"a11y": {
 				"useButtonType": "warn"
@@ -18,7 +17,7 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"formatWithErrors": false
 	},
 	"files": {
 		"ignore": ["node_modules/**/*"]
