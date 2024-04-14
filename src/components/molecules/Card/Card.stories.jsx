@@ -2,7 +2,7 @@ import {
 	getListTemplate,
 	getOptionsArgTypes,
 	getTemplate,
-} from "../../../helpers/templateHelpers";
+} from "/helpers/templateHelpers";
 import Card from "./Card";
 import styles from "./Card.module.css";
 import { options } from "./constants";
@@ -11,7 +11,7 @@ const CardTemplate = getTemplate(Card, styles);
 const ListTemplate = getListTemplate(Card, styles);
 
 export default {
-	title: "Card",
+	title: "Molecules/Card",
 	component: Card,
 	tags: ["autodocs"],
 	args: {
@@ -37,6 +37,7 @@ export const Secondary = {
 
 //**Templates using Helpers
 
+//Pintan 1 por Story
 export const Clickable = CardTemplate.bind({});
 Clickable.args = {
 	isClickable: true,
@@ -47,6 +48,7 @@ Dragable.args = {
 	isDragable: true,
 };
 
+//Pintan 2
 export const Colors = ListTemplate.bind({});
 Colors.args = {
 	items: options.colors.map((color) => ({ color })),

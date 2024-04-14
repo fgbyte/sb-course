@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { getClasses } from "../../../helpers/stylesHelpers";
+import { getClasses } from "/helpers/stylesHelpers";
 import styles from "./Card.module.css";
 import { options } from "./constants";
 
@@ -13,8 +13,8 @@ const Card = ({
 	const getStyles = getClasses(styles)({
 		color,
 		size,
-		"is-clickable": isClickable,
-		"is-dragable": isDragable,
+		isClickable,
+		isDragable,
 	});
 
 	return (

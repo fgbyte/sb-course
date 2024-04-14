@@ -12,6 +12,9 @@ const ATOMIC_DESIGN_TYPES = {
 };
 const COMPONENT_TEMPLATE_PATH = "templates/component";
 
+//Cambiar según el framework 👇
+const MY_PATH = "src/components";
+
 function createComponentFolder(componentPath) {
 	return fs.mkdir(componentPath, { recursive: true });
 }
@@ -48,7 +51,7 @@ async function createComponent(componentTemplates, type, componentName) {
 	const mappedType = ATOMIC_DESIGN_TYPES[type];
 	const atomicComponentPath = path.join(
 		__dirname,
-		`../src/${mappedType}/${componentName}`,
+		`../${MY_PATH}/${mappedType}/${componentName}`,
 	);
 
 	try {

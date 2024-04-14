@@ -13,8 +13,6 @@ const dynamicStyles = ({ __sb }) => ({
 	flexWrap: __sb?.fw || "wrap",
 	height: "100%",
 	gap: "10px 30px",
-	backgroundColor: "#2222",
-	padding: "30px",
 });
 
 export const decorators = [
