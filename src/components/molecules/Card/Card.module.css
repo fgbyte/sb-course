@@ -11,7 +11,7 @@
 
 .color-primary {
     color: white;
-    background: var(--color-primary);
+    background: blue;
 }
 
 .color-secondary {
