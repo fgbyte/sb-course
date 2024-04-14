@@ -13,8 +13,8 @@ export default {
 		width: 200,
 	},
 	argTypes: {
-		width: { control: "number " },
-		height: { control: "number " },
+		width: { control: "number" },
+		height: { control: "number" },
 	},
 };
 
@@ -24,4 +24,17 @@ export const Default = Template.bind({});
 export const Rounded = Template.bind({});
 Rounded.args = {
 	isRounded: true,
+};
+
+export const Height = Template.bind({});
+Height.args = {
+	height: 400,
+	//add another args to change the story
+	src: "https://picsum.photos/id/1035/400/400",
+};
+
+export const Width = Template.bind({});
+Width.args = {
+	width: 500,
+	src: "https://picsum.photos/id/1036/400/400",
 };

@@ -1,9 +1,11 @@
-import classNames from "classnames";
 import PropTypes from "prop-types"; //solo en jsx
+import { getClasses } from "/helpers/stylesHelpers";
 import styles from "./Component.module.css";
 
 const Component = ({ children }) => {
-	return <div className={classNames(styles.component)}>{children}</div>;
+	const getStyles = getClasses(styles)({});
+
+	return <div className={getStyles("component", {})}>{children}</div>;
 };
 
 Component.propTypes = {

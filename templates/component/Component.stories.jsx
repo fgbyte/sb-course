@@ -1,4 +1,8 @@
+import { getTemplate } from "../../../../helpers/templateHelpers";
 import Component from "../../atomic/Component";
+import styles from "./Component.module.css";
+
+const Template = getTemplate(Component, styles);
 
 export default {
 	title: "Atomic/Component",
@@ -7,4 +11,4 @@ export default {
 };
 
 //Story
-export const Default = () => <Component>Hello Component</Component>;
+export const Default = Template.bind({});

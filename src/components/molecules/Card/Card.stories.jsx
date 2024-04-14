@@ -2,12 +2,12 @@ import {
 	getListTemplate,
 	getOptionsArgTypes,
 	getTemplate,
-} from "/helpers/templateHelpers";
+} from "../../../../helpers/templateHelpers";
 import Card from "./Card";
 import styles from "./Card.module.css";
 import { options } from "./constants";
 
-const CardTemplate = getTemplate(Card, styles);
+const Template = getTemplate(Card, styles);
 const ListTemplate = getListTemplate(Card, styles);
 
 export default {
@@ -38,12 +38,12 @@ export const Secondary = {
 //**Templates using Helpers
 
 //Pintan 1 por Story
-export const Clickable = CardTemplate.bind({});
+export const Clickable = Template.bind({});
 Clickable.args = {
 	isClickable: true,
 };
 
-export const Dragable = CardTemplate.bind({});
+export const Dragable = Template.bind({});
 Dragable.args = {
 	isDragable: true,
 };
